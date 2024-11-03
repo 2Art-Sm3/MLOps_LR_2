@@ -1,7 +1,37 @@
 MLOps
 ==============================
 
-dz
+
+## Установка окружения
+
+### 1. Создать виртуальное окружение:
+
+```
+python -m venv venv
+source venv/bin/activate  # Для Linux/Mac
+venv\Scripts\activate  # Для Windows
+```
+
+### 2. Установить зависимости из requirements.txt:
+
+```
+pip install -r requirements.txt
+```
+
+### 3. Установить pre-commit:
+
+```
+pip install pre-commit
+pre-commit install
+```
+
+### 4. Запуск ручной проверки проекта:
+
+```
+pre-commit run --all-files
+```
+
+
 
 Project Organization
 ------------
