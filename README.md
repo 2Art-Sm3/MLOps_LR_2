@@ -2,35 +2,37 @@ MLOps
 ==============================
 
 
-## Установка окружения
+## Запуск проекта
 
-### 1. Создать виртуальное окружение:
 
-```
-python -m venv venv
-source venv/bin/activate  # Для Linux/Mac
-venv\Scripts\activate  # Для Windows
-```
-
-### 2. Установить зависимости из requirements.txt:
+### 1. Установить зависимости через Poetry:
 
 ```
-pip install -r requirements.txt
+poetry install
 ```
 
-### 3. Установить pre-commit:
+### 2. Запустить контейнер Docker с minio:
 
 ```
-pip install pre-commit
+docker-compose up -d
+```
+
+### 3. Установить права доступа:
+
+```
+chmod +x src/shell/*.sh pipeline.sh
+```
+
+### 4. Установка pre-commit:
+
+```
 pre-commit install
 ```
-
-### 4. Запуск ручной проверки проекта:
+### 5. Запустить pipeline.sh:
 
 ```
-pre-commit run --all-files
+./pipeline.sh
 ```
-
 
 
 Project Organization

@@ -1,4 +1,4 @@
 [flake8]
 max-line-length = 99
 per-file-ignores = __init__.py: F401
-exclude = venv
+exclude = venv, pypa, __pycache__

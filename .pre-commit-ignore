@@ -1,0 +1,6 @@
+pypa/
+venv/
+.venv/
+__pycache__/
+*.lock
+*.toml
